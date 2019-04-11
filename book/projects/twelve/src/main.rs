@@ -39,7 +39,6 @@ fn gift(day: usize) -> String {
 }
 
 fn ordinal(day: usize) -> String {
-
     String::from(if day == 1 {
         "first".to_string()
     } else if day == 2 {
@@ -59,7 +58,6 @@ fn ordinal(day: usize) -> String {
 
 
 fn main() {
-
     for day in 1..13 {
         println!("On the {} day of Christmas, my true love gave to me:", ordinal(day));
         for gift_day in (1..(day+1)).rev() {
